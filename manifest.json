@@ -1,0 +1,43 @@
+{
+  "name": "Deep-Focus | تدريب التركيز",
+  "short_name": "Deep-Focus",
+  "description": "تطبيق تدريب التركيز والانتباه من خلال تمارين بصرية هادئة",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#2d6a6a",
+  "background_color": "#e8f5f5",
+  "categories": ["health", "lifestyle", "productivity"],
+  "icons": [
+    { "src": "assets/icons/icon-48x48.png",   "sizes": "48x48",   "type": "image/png" },
+    { "src": "assets/icons/icon-72x72.png",   "sizes": "72x72",   "type": "image/png" },
+    { "src": "assets/icons/icon-96x96.png",   "sizes": "96x96",   "type": "image/png" },
+    { "src": "assets/icons/icon-128x128.png", "sizes": "128x128", "type": "image/png" },
+    { "src": "assets/icons/icon-144x144.png", "sizes": "144x144", "type": "image/png" },
+    { "src": "assets/icons/icon-152x152.png", "sizes": "152x152", "type": "image/png" },
+    { "src": "assets/icons/icon-180x180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "assets/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icons/icon-256x256.png", "sizes": "256x256", "type": "image/png" },
+    { "src": "assets/icons/icon-384x384.png", "sizes": "384x384", "type": "image/png" },
+    { "src": "assets/icons/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "جلسة سريعة — دقيقة",
+      "short_name": "دقيقة",
+      "description": "ابدأ جلسة تدريب مدتها دقيقة واحدة",
+      "url": "./index.html?dur=60",
+      "icons": [{ "src": "assets/icons/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "جلسة عميقة — ١٠ دقائق",
+      "short_name": "١٠ دقائق",
+      "description": "ابدأ جلسة تدريب مدتها عشر دقائق",
+      "url": "./index.html?dur=600",
+      "icons": [{ "src": "assets/icons/icon-96x96.png", "sizes": "96x96" }]
+    }
+  ]
+}

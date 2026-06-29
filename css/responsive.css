@@ -1,0 +1,325 @@
+/* ============================================================
+   DEEP-FOCUS — RESPONSIVE STYLESHEET
+   ============================================================ */
+
+/* ── Small Mobile (< 360px) ──────────────────────────────── */
+@media (max-width: 359px) {
+  .mode-select {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .complete-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .cstat-val {
+    font-size: 1.125rem;
+  }
+
+  .dur-btn {
+    padding: 8px 12px;
+    font-size: 0.8125rem;
+  }
+
+  .home-secondary {
+    flex-direction: column;
+  }
+}
+
+/* ── Mobile (360px – 479px) ──────────────────────────────── */
+@media (min-width: 360px) and (max-width: 479px) {
+  .mode-select {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Large Mobile / Small Tablet (480px – 767px) ─────────── */
+@media (min-width: 480px) and (max-width: 767px) {
+  .mode-select {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .range-slider {
+    width: 140px;
+  }
+}
+
+/* ── Tablet (768px – 1023px) ─────────────────────────────── */
+@media (min-width: 768px) {
+  .home-content {
+    max-width: 560px;
+  }
+
+  .mode-select {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .duration-select {
+    gap: 12px;
+  }
+
+  .dur-btn {
+    padding: 12px 24px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .complete-card {
+    max-width: 440px;
+  }
+
+  .settings-content {
+    max-width: 640px;
+  }
+
+  .range-slider {
+    width: 160px;
+  }
+
+  .session-hud {
+    gap: 20px;
+    padding: 12px 32px;
+  }
+
+  .hud-timer {
+    font-size: 1.5rem;
+    min-width: 70px;
+  }
+
+  .hud-focus-bar {
+    width: 100px;
+  }
+
+  .hud-score {
+    font-size: 1rem;
+  }
+}
+
+/* ── Desktop (1024px – 1439px) ───────────────────────────── */
+@media (min-width: 1024px) {
+  .home-content {
+    max-width: 600px;
+  }
+
+  .mode-select {
+    gap: 14px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .stats-content,
+  .settings-content {
+    max-width: 860px;
+  }
+
+  .settings-content {
+    max-width: 680px;
+  }
+
+  #page-stats,
+  #page-settings {
+    overflow-y: auto;
+  }
+
+  .complete-card {
+    max-width: 480px;
+  }
+}
+
+/* ── Wide Desktop (1440px – 1919px) ─────────────────────── */
+@media (min-width: 1440px) {
+  .home-content {
+    max-width: 680px;
+  }
+
+  .stats-content {
+    max-width: 1000px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .bar-chart {
+    height: 140px;
+  }
+}
+
+/* ── Ultra-wide / 4K (≥ 1920px) ─────────────────────────── */
+@media (min-width: 1920px) {
+  :root {
+    font-size: 18px;
+  }
+
+  .home-content {
+    max-width: 800px;
+  }
+
+  .stats-content {
+    max-width: 1200px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+
+  .bar-chart {
+    height: 180px;
+  }
+
+  .session-hud {
+    padding: 16px 48px;
+    gap: 28px;
+  }
+}
+
+/* ── Landscape Mobile ────────────────────────────────────── */
+@media (max-width: 767px) and (orientation: landscape) {
+  #page-home {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .logo-wrap {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 12px;
+  }
+
+  .app-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .mode-select {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .mode-btn {
+    padding: 10px 4px;
+    font-size: 0.6875rem;
+  }
+
+  .mode-icon {
+    font-size: 1.125rem;
+  }
+
+  .duration-select {
+    margin-bottom: 16px;
+  }
+
+  .home-actions {
+    margin-bottom: 8px;
+  }
+
+  .session-hud {
+    top: max(8px, env(safe-area-inset-top, 8px));
+    padding: 8px 20px;
+  }
+
+  .session-controls {
+    bottom: max(12px, env(safe-area-inset-bottom, 12px));
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .complete-card {
+    padding: 24px;
+  }
+}
+
+/* ── Foldable / Narrow (< 280px) ─────────────────────────── */
+@media (max-width: 279px) {
+  .mode-select {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .duration-select {
+    gap: 6px;
+  }
+
+  .dur-btn {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+
+  .home-actions .btn-primary {
+    font-size: 1rem;
+    padding: 14px 20px;
+  }
+
+  .settings-section {
+    padding: 14px;
+  }
+
+  .slider-wrap {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+
+  .range-slider {
+    width: 100px;
+  }
+}
+
+/* ── High-DPI / Retina Screens ───────────────────────────── */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+  .logo-wrap img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* ── Safe Area (Notch / Home Indicator) ──────────────────── */
+@supports (padding: max(0px)) {
+  #page-home {
+    padding-top: max(40px, env(safe-area-inset-top, 40px));
+    padding-bottom: max(40px, env(safe-area-inset-bottom, 40px));
+    padding-left: max(16px, env(safe-area-inset-left, 16px));
+    padding-right: max(16px, env(safe-area-inset-right, 16px));
+  }
+
+  .session-hud {
+    top: max(20px, env(safe-area-inset-top, 20px));
+  }
+
+  .session-controls {
+    bottom: max(24px, env(safe-area-inset-bottom, 24px));
+  }
+
+  .btn-install {
+    bottom: max(24px, env(safe-area-inset-bottom, 24px));
+  }
+}
+
+/* ── Print (disable animations, simplify) ───────────────── */
+@media print {
+  .ambient-particles,
+  .session-hud,
+  .session-controls,
+  #countdown-overlay,
+  .loss-flash,
+  #complete-overlay,
+  .btn-install,
+  .notif {
+    display: none !important;
+  }
+}
